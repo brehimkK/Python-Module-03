@@ -40,7 +40,7 @@ def current_in(all_inputs: dict,total : int )->None:
                 max_v = value
                 max_k = key
         
-        # Avoid division by zero if total is 0
+        
         percentage = (max_v / total * 100) if total > 0 else 0
         print(f"{max_k}: {max_v} units ({percentage:.1f}%)")
         printed[max_k] = max_v
@@ -92,7 +92,6 @@ def main() -> None:
     print(f"Restock needed: {restock}")
 
     print("\n=== Dictionary Properties Demo ===")
-    # Formatting keys/values without join() and using authorized methods
     d_keys = ""
     for k in all_inputs.keys():
         d_keys += (", " if d_keys != "" else "") + k
