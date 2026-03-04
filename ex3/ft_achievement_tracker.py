@@ -19,7 +19,6 @@ def main() -> None:
 
     common_all = alice.intersection(bob, charlie)
     print(f"Common to all players: {common_all}\n")
-    
     rare_achievement = (
         alice.difference(bob, charlie).union(
             bob.difference(alice, charlie),
